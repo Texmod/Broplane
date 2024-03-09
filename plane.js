@@ -101,8 +101,8 @@ function draw(){
 		ctx.fillText("Game Over", (canvas.width - 100) / 2, (canvas.height - 20) / 2);
 		ctx.fillText("'R' or Tap to Restart", (canvas.width - 100) / 2, ((canvas.height - 20) / 2) + 50);
 		ctx.fillText("Final Score: " + plane.score, (canvas.width - 100) / 2, ((canvas.height - 20) / 2) + 100);
-		
 	}
+
 	enemy_draw();
 	health();
 }
@@ -230,7 +230,7 @@ function score(){
 		game_over = true;
 	}
 
-	if (plane.counter >= 15){
+	if (plane.counter >= 15 && enemy_speed < 22.5){
 		plane.counter = 0;
 		enemy_speed = enemy_speed + 1.5;
 		plane.jump_vel = plane.jump_vel + 0.01;
