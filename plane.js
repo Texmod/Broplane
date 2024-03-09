@@ -230,7 +230,7 @@ function score(){
 		game_over = true;
 	}
 
-	if (plane.counter >= 15 && enemy_speed < 22.5){
+	if (plane.counter >= 15 && enemy_speed < 15){
 		plane.counter = 0;
 		enemy_speed = enemy_speed + 1.5;
 		plane.jump_vel = plane.jump_vel + 0.01;
