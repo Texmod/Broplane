@@ -232,11 +232,11 @@ function score(){
 
 	if (plane.counter >= 15){
 		plane.counter = 0;
-		enemy_speed = enemy_speed + 2;
+		enemy_speed = enemy_speed + 1.5;
 		plane.jump_vel = plane.jump_vel + 0.01;
 		plane.rot = plane.rot + 0.02;
 		bkg_no = bkg_no + 1;
-		parallax_speed = parallax_speed + 2;
+		parallax_speed = parallax_speed + 1.5;
 		
 		if (bkg_no > 4){
 			bkg_no = 0;
@@ -254,7 +254,7 @@ function reset(){
 		plane.counter = 0;
 		plane.score = 0;
 		plane.stunt = 0;
-		plane.health = 2;
+		plane.health = 10;
 		plane.rot = 0.03;
 		bkg_no = 0;
 		current_background = backgrounds[bkg_no];
