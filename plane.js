@@ -24,7 +24,7 @@ var plane = {
 			 counter : 0,
 			 jump_vel : 0.5,
 			 stunt : 0,
-			 health : 2,
+			 health : 10,
 			 rot : 0.03
 			};
 
