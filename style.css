@@ -1,0 +1,22 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background: rgb(33,32,30);
+}
+
+#canvas {
+	border-radius: 10px;
+	background: linear-gradient(69deg, rgba(81,55,156,1) 0%, rgba(251,119,133,1) 60%, rgba(254,175,132,1) 100%);
+	padding: 4px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	max-width: 100%;
+	max-height: 100%;
+	font-family: Comic Sans;
+}
